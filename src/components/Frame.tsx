@@ -118,6 +118,17 @@ export default function Frame(
     >
       <div className="w-[300px] mx-auto py-2 px-2">
         <h1 className="text-2xl font-bold text-center mb-4">{title}</h1>
+        <div className="space-y-4">
+          <PurpleButton onClick={() => sdk.actions.openUrl("https://dreamcompanion.ai/generate")}>
+            Generate New Companion
+          </PurpleButton>
+          <PurpleButton onClick={() => sdk.actions.openUrl("https://dreamcompanion.ai/customize")}>
+            Customize Companion
+          </PurpleButton>
+          <PurpleButton onClick={() => sdk.actions.openUrl("https://dreamcompanion.ai/gallery")}>
+            View Gallery
+          </PurpleButton>
+        </div>
       </div>
     </div>
   );
